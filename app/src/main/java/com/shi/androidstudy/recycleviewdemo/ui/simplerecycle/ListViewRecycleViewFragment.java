@@ -1,4 +1,4 @@
-package com.shi.androidstudy.recycleviewdemo.ui;
+package com.shi.androidstudy.recycleviewdemo.ui.simplerecycle;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 
 import com.shi.androidstudy.recycleviewdemo.R;
 import com.shi.androidstudy.recycleviewdemo.adapter.CommonAdapter;
+import com.shi.androidstudy.recycleviewdemo.ui.BaseFragment;
+import com.shi.androidstudy.recycleviewdemo.ui.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;

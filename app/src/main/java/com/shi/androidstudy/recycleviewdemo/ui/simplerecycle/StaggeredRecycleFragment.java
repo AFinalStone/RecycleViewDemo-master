@@ -1,4 +1,4 @@
-package com.shi.androidstudy.recycleviewdemo.ui;
+package com.shi.androidstudy.recycleviewdemo.ui.simplerecycle;
 
 
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.shi.androidstudy.recycleviewdemo.R;
 import com.shi.androidstudy.recycleviewdemo.adapter.StaggeredAdapter;
+import com.shi.androidstudy.recycleviewdemo.ui.BaseFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ import java.util.List;
  * @author shi
  * @time 2016/6/30 16:54
  */
-public class StaggeredRecycleFragment extends BaseFragment{
+public class StaggeredRecycleFragment extends BaseFragment {
 
     private RecyclerView mRecyclerView;
     private List<String> listData;
