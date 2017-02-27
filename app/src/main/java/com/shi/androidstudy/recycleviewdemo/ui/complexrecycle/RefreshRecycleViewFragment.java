@@ -1,8 +1,10 @@
-package com.shi.androidstudy.recycleviewdemo.ui.simplerecycle;
+package com.shi.androidstudy.recycleviewdemo.ui.complexrecycle;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,6 +13,8 @@ import android.view.ViewGroup;
 
 import com.shi.androidstudy.recycleviewdemo.R;
 import com.shi.androidstudy.recycleviewdemo.adapter.CommonAdapter;
+import com.shi.androidstudy.recycleviewdemo.adapter.GeneralAdapter;
+import com.shi.androidstudy.recycleviewdemo.adapter.HeaderAndFooterRecyclerViewAdapter;
 import com.shi.androidstudy.recycleviewdemo.ui.BaseFragment;
 import com.shi.androidstudy.recycleviewdemo.ui.DividerItemDecoration;
 
@@ -19,56 +23,52 @@ import java.util.List;
 
 /**
  * Created by SHI on 2016/6/23.
- * 模仿listView
+ * 下拉刷新
  */
-public class ListViewRecycleViewFragment extends BaseFragment {
+public class RefreshRecycleViewFragment extends BaseFragment implements SwipeRefreshLayout.OnRefreshListener {
 
     private RecyclerView mRecyclerView;
     private List<String> listData;
-    private CommonAdapter commonAdapter;
+    private GeneralAdapter generalAdapter;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     public View initView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_simple_recycle_view,null);
+        View view = inflater.inflate(R.layout.fragment_refresh_recycle_view,null);
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
-
+        swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeRefreshLayout);
+        swipeRefreshLayout.setOnRefreshListener(this);
         return view;
     }
 
     @Override
     public void initData(@Nullable Bundle savedInstanceState) {
-        //初始化数据集
         listData = new ArrayList<String>();
+
         for (int i = 'A'; i < 'z'; i++) {
-            listData.add("" + (char) i);
             listData.add("" + (char) i);
         }
 
         //设置默认动画，添加addData()或者removeData()时候的动画
-         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         //设置LinearLayoutManager布局管理器，实现ListView效果
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mActivity));
-        //创建适配器
-        commonAdapter = new CommonAdapter(mActivity,listData);
-        //设置设配器
-        mRecyclerView.setAdapter(commonAdapter);
-        //添加水平分割线,想要改变水平分割线的风格可以在主题中通过改变listDivider来设置
-        mRecyclerView.addItemDecoration(new DividerItemDecoration(mActivity,DividerItemDecoration.VERTICAL_LIST));
-        //设置item条目点击监听事件
-        commonAdapter.setOnItemClickLitener(new CommonAdapter.OnItemClickLitener() {
-            @Override
-            public void onItemClick(View view, int position) {
-                //添加一个新的条目，并使用之前设置的动画效果
-                commonAdapter.addData(position,"insert new Data");
-            }
 
-            @Override
-            public void onItemLongClick(View view, int position) {
-                //删除一个条目，并使用之前设置的动画效果
-                commonAdapter.removeData(position);
-            }
-        });
+        generalAdapter = new GeneralAdapter(mActivity,listData);
+
+        mRecyclerView.setAdapter(generalAdapter);
+
     }
 
+    @Override
+    public void onRefresh() {
+        swipeRefreshLayout.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                swipeRefreshLayout.setRefreshing(false);
+
+            }
+        },3000);
+    }
 }

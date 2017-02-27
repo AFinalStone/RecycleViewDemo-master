@@ -30,8 +30,8 @@ public class HorizontalGridViewRecycleViewFragment extends BaseFragment {
 
     @Override
     public View initView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_recycle_view,null);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.id_recyclerview);
+        View view = inflater.inflate(R.layout.fragment_simple_recycle_view,null);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
 
         return view;
     }

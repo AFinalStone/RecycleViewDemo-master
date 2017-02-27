@@ -5,9 +5,7 @@
     tools:context=".ui.simplerecycle.ListViewRecycleViewFragment">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/id_recyclerview"
-        android:divider="#ffff0000"
-        android:dividerHeight="2dp"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

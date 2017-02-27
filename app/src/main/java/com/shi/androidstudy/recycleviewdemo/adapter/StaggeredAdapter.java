@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * 瀑布流适配器
  * @author SHI
- * @time 2016/7/1 11:40
+ * @time 2016/7/footer 11:40
  */
 public class StaggeredAdapter extends	RecyclerView.Adapter<StaggeredAdapter.MyViewHolder>
 {
