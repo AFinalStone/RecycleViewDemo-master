@@ -1,10 +1,10 @@
-package com.shi.androidstudy.recycleviewdemo.ui.simplerecycle;
+package com.shi.androidstudy.recycleviewdemo.ui.gridview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,13 +19,14 @@ import java.util.List;
 
 /**
  * Created by SHI on 2016/6/23.
- * 模仿GridView
+ * 模仿水平GridView
  */
-public class GridViewRecycleViewFragment extends BaseFragment {
+public class RecycleViewFragment_HorizontalGridView extends BaseFragment {
 
     private RecyclerView mRecyclerView;
     private List<String> listData;
     private CommonAdapter commonAdapter;
+
 
     @Override
     public View initView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -44,17 +45,19 @@ public class GridViewRecycleViewFragment extends BaseFragment {
             listData.add("" + (char) i);
         }
 
-        //设置GridLayoutManager布局管理器，实现GridView效果,每行展示四个item
-        mRecyclerView.setLayoutManager(new GridLayoutManager(mActivity,4));
-        //添加水平分割线
-//        mRecyclerView.addItemDecoration(new DividerItemDecoration(mActivity,DividerItemDecoration.VERTICAL_LIST));
-        //添加竖直分割线
+        //StaggeredGridLayoutManager，实现水平GridView效果,每列展示四个item
+        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(4,
+                StaggeredGridLayoutManager.HORIZONTAL));
+
         mRecyclerView.addItemDecoration(new DividerItemDecoration(mActivity,DividerItemDecoration.HORIZONTAL_LIST));
-        //设置默认动画，添加addData()或者removeData()时候的动画
+        mRecyclerView.addItemDecoration(new DividerItemDecoration(mActivity,DividerItemDecoration.VERTICAL_LIST));
+
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
         commonAdapter = new CommonAdapter(mActivity,listData);
+
         mRecyclerView.setAdapter(commonAdapter);
+
         commonAdapter.setOnItemClickLitener(new CommonAdapter.OnItemClickLitener() {
             @Override
             public void onItemClick(View view, int position) {

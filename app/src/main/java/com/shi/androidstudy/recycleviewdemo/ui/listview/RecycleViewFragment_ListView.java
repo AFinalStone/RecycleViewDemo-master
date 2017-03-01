@@ -1,4 +1,4 @@
-package com.shi.androidstudy.recycleviewdemo.ui.simplerecycle;
+package com.shi.androidstudy.recycleviewdemo.ui.listview;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -21,7 +21,7 @@ import java.util.List;
  * Created by SHI on 2016/6/23.
  * 模仿listView
  */
-public class ListViewRecycleViewFragment extends BaseFragment {
+public class RecycleViewFragment_ListView extends BaseFragment {
 
     private RecyclerView mRecyclerView;
     private List<String> listData;

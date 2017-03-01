@@ -3,28 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.shi.androidstudy.recycleviewdemo.ui.MainActivity">
 
-
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:tabGravity="center"
-        android:background="@android:color/white"
-        app:tabIndicatorColor="@android:color/holo_red_light"
-        app:tabSelectedTextColor="@android:color/holo_purple"
-        app:tabTextColor="@android:color/black"
-        app:tabMode="scrollable" />
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_below="@id/tabLayout"
+    <Button
+        android:id="@+id/btn_listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ListView样式" />
 
-    </android.support.v4.view.ViewPager>
+    <Button
+        android:id="@+id/btn_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="GridView样式" />
 
+    <Button
+        android:id="@+id/btn_staggered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="瀑布流样式" />
 </LinearLayout>

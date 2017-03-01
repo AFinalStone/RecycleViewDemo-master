@@ -1,4 +1,4 @@
-package com.shi.androidstudy.recycleviewdemo.ui.simplerecycle;
+package com.shi.androidstudy.recycleviewdemo.ui.staggered;
 
 
 import android.os.Bundle;
