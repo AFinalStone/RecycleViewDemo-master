@@ -20,9 +20,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.FragmentActivity">
-        </activity>
-
     </application>
 
 </manifest>
