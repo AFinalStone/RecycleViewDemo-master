@@ -630,7 +630,7 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
 这样的功能方法，我们需要自定义适配器，使得适配器内部包含三个适配器：头部适配器，尾部适配器，
 以及条目适配器。
 
-![效果图](pic/header_footer.gif)
+![效果图](/https://raw.githubusercontent.com/AFinalStone/RecycleViewDemo-master/master/pic/header_footer.gif)
 
 对应的java主要代码文件：
 
@@ -899,7 +899,7 @@ public class HeaderAndFooterRecyclerViewAdapter extends RecyclerView.Adapter<Rec
 
 ### RecycleView控件的使用(三) 实现上拉加载更多下拉刷新功能
 
-![效果图](pic/swiperefresh.gif)
+![效果图](https://raw.githubusercontent.com/AFinalStone/RecycleViewDemo-master/master/pic/swiperefresh.gif)
 
 - 对应的java主要代码文件：
 
