@@ -901,7 +901,7 @@ public class HeaderAndFooterRecyclerViewAdapter extends RecyclerView.Adapter<Rec
 
 ![效果图](https://raw.githubusercontent.com/AFinalStone/RecycleViewDemo-master/master/pic/swiperefresh.gif)
 
-- 对应的java主要代码文件：
+- 短短几行代码实现,RecycylerView的上拉加载下拉刷新功能，对应的java主要代码文件：
 
 ```java
 public class RefreshAndLoadRecycleViewFragment_ListView extends BaseFragment implements SwipeRefreshRecycleView.OnSwipeRefreshViewListener{
