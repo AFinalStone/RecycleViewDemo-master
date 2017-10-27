@@ -1,12 +1,13 @@
-package com.example.recyclerview_swiperefreshview;
+package com.example.recyclerview_headerandfoot;
 
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
 
-        listFragment.add(new RefreshAndLoadRecycleViewFragment_ListView());
-        listTitle.add("ListView效果_RefreshAndLoad");
-        listFragment.add(new RefreshAndLoadRecycleViewFragment_GridView());
-        listTitle.add("GridView效果_RefreshAndLoad");
-        listFragment.add(new RefreshAndLoadRecycleViewFragment_Staggered());
-        listTitle.add("瀑布流效果_RefreshAndLoad");
+        listFragment.add(new HeaderAndFooterRecycleViewFragment_ListView());
+        listTitle.add("ListView效果_HeaderAndFooter");
+        listFragment.add(new HeaderAndFooterRecycleViewFragment_GridView());
+        listTitle.add("GridView效果_HeaderAndFooter");
+        listFragment.add(new HeaderAndFooterRecycleViewFragment_Staggered());
+        listTitle.add("瀑布流效果_HeaderAndFooter");
 
         mMyFragmentAdapter = new MyFragmentAdapter(getSupportFragmentManager());
         viewPager.setAdapter(mMyFragmentAdapter);

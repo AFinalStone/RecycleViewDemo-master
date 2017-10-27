@@ -1,4 +1,4 @@
-package com.example.headerandfooter;
+package com.example.recyclerview_headerandfoot;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
