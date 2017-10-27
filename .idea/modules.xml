@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RecycleViewDemo-master.iml" filepath="$PROJECT_DIR$/RecycleViewDemo-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/recyclerview_headerandfoot/recyclerview_headerandfoot.iml" filepath="$PROJECT_DIR$/recyclerview_headerandfoot/recyclerview_headerandfoot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/recyclerview_swiperefreshview/recyclerview_swiperefreshview.iml" filepath="$PROJECT_DIR$/recyclerview_swiperefreshview/recyclerview_swiperefreshview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView/recyclerview.iml" filepath="$PROJECT_DIR$/RecyclerView/recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView_HeaderAndFoot/recyclerview_headerandfoot.iml" filepath="$PROJECT_DIR$/RecyclerView_HeaderAndFoot/recyclerview_headerandfoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView_MultiModule/Recyclerview_MultiModule.iml" filepath="$PROJECT_DIR$/RecyclerView_MultiModule/Recyclerview_MultiModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView_SwipeRefreshView/recyclerview_swiperefreshview.iml" filepath="$PROJECT_DIR$/RecyclerView_SwipeRefreshView/recyclerview_swiperefreshview.iml" />
     </modules>
   </component>
 </project>

@@ -8,9 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/recyclerview" />
-            <option value="$PROJECT_DIR$/recyclerview_headerandfoot" />
-            <option value="$PROJECT_DIR$/recyclerview_swiperefreshview" />
+            <option value="$PROJECT_DIR$/RecyclerView" />
+            <option value="$PROJECT_DIR$/RecyclerView_HeaderAndFoot" />
+            <option value="$PROJECT_DIR$/RecyclerView_MultiModule" />
+            <option value="$PROJECT_DIR$/RecyclerView_SwipeRefreshView" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

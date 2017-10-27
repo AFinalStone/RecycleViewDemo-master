@@ -1,1 +1,1 @@
-include ':recyclerview', ':recyclerview_headerandfoot', ':recyclerview_swiperefreshview'
+include ':RecyclerView', ':RecyclerView_HeaderAndFoot', ':RecyclerView_SwipeRefreshView', ':RecyclerView_MultiModule'
