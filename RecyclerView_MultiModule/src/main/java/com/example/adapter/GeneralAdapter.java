@@ -30,50 +30,9 @@ public class GeneralAdapter extends RecyclerView.Adapter<GeneralAdapter.MyViewHo
     }
 
     @Override
-    public void onAttachedToRecyclerView(final RecyclerView recyclerView) {
-        super.onAttachedToRecyclerView(recyclerView);
-
-        RecyclerView.LayoutManager manager = recyclerView.getLayoutManager();
-        if(manager instanceof GridLayoutManager) {
-            final GridLayoutManager gridManager = ((GridLayoutManager) manager);
-            gridManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-                @Override
-                public int getSpanSize(int position) {
-                    int type = getItemViewType(position);
-                    switch (type){
-                        case 0:
-                            return 6;
-                        case 1:
-                            return 3;
-                        case 2:
-                            return 2;
-                        default:
-                            return 3;
-                    }
-                }
-            });
-        }
-    }
-
-    @Override
-    public int getItemViewType(int position) {
-        if(position == 1){
-            return 0;
-        }
-        if( position>=1 && position<=5){
-            return 1;
-        }
-        if(position >= 6 && position<= 12)
-        {
-            return 2;
-        }
-        return super.getItemViewType(position);
-    }
-
-    @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         MyViewHolder holder = new MyViewHolder(mInflater.inflate(
-                R.layout.item_common_adapter, parent, false));
+                R.layout.item_adapter_common, parent, false));
         return holder;
     }
 

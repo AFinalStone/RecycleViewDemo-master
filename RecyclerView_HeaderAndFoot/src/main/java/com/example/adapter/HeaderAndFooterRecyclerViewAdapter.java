@@ -182,7 +182,9 @@ public class HeaderAndFooterRecyclerViewAdapter extends RecyclerView.Adapter<Rec
 
     @Override
     public int getItemViewType(int position) {
+        //获取内部适配器的Item数据条目数量
         int innerCount = mInnerAdapter.getItemCount();
+        //获取头部的Item数据条目数量
         int headerViewsCountCount = getHeaderViewsCount();
         if (position < headerViewsCountCount) {
             return TYPE_HEADER_VIEW + position;
