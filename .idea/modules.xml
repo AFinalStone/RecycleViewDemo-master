@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/RecycleViewDemo-master.iml" filepath="$PROJECT_DIR$/RecycleViewDemo-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecyclerView/RecyclerView.iml" filepath="$PROJECT_DIR$/RecyclerView/RecyclerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecyclerView_HeaderAndFoot/RecyclerView_HeaderAndFoot.iml" filepath="$PROJECT_DIR$/RecyclerView_HeaderAndFoot/RecyclerView_HeaderAndFoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView_Menu/RecyclerView_Menu.iml" filepath="$PROJECT_DIR$/RecyclerView_Menu/RecyclerView_Menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecyclerView_MultiModule/RecyclerView_MultiModule.iml" filepath="$PROJECT_DIR$/RecyclerView_MultiModule/RecyclerView_MultiModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecyclerView_SwipeRefreshView/RecyclerView_SwipeRefreshView.iml" filepath="$PROJECT_DIR$/RecyclerView_SwipeRefreshView/RecyclerView_SwipeRefreshView.iml" />
     </modules>

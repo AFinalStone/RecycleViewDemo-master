@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/RecyclerView" />
             <option value="$PROJECT_DIR$/RecyclerView_HeaderAndFoot" />
+            <option value="$PROJECT_DIR$/RecyclerView_Menu" />
             <option value="$PROJECT_DIR$/RecyclerView_MultiModule" />
             <option value="$PROJECT_DIR$/RecyclerView_SwipeRefreshView" />
           </set>
