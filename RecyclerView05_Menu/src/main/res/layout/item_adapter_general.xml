@@ -1,0 +1,51 @@
+<com.example.recyclerview_menu.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image01"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#f7e79c"
+            android:paddingLeft="25dp"
+            android:src="@android:drawable/star_big_off"
+            android:paddingRight="25dp" />
+
+        <ImageView
+            android:id="@+id/image02"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#4cd964"
+            android:src="@android:drawable/checkbox_off_background"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" />
+
+        <ImageView
+            android:id="@+id/image03"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:src="@android:drawable/ic_search_category_default"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView_context"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</com.example.recyclerview_menu.SwipeLayout>

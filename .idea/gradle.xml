@@ -8,11 +8,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/RecyclerView" />
-            <option value="$PROJECT_DIR$/RecyclerView_HeaderAndFoot" />
-            <option value="$PROJECT_DIR$/RecyclerView_Menu" />
-            <option value="$PROJECT_DIR$/RecyclerView_MultiModule" />
-            <option value="$PROJECT_DIR$/RecyclerView_SwipeRefreshView" />
+            <option value="$PROJECT_DIR$/RecyclerView01" />
+            <option value="$PROJECT_DIR$/RecyclerView02_HeaderAndFoot" />
+            <option value="$PROJECT_DIR$/RecyclerView03_SwipeRefreshView" />
+            <option value="$PROJECT_DIR$/RecyclerView04_CheckBox" />
+            <option value="$PROJECT_DIR$/RecyclerView05_Menu" />
+            <option value="$PROJECT_DIR$/RecyclerView06_MultiModule" />
+            <option value="$PROJECT_DIR$/RecyclerView07_CountDown" />
+            <option value="$PROJECT_DIR$/RecyclerView_AllAdapter" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

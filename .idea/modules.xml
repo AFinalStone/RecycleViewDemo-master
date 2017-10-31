@@ -3,11 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RecycleViewDemo-master.iml" filepath="$PROJECT_DIR$/RecycleViewDemo-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RecyclerView/RecyclerView.iml" filepath="$PROJECT_DIR$/RecyclerView/RecyclerView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RecyclerView_HeaderAndFoot/RecyclerView_HeaderAndFoot.iml" filepath="$PROJECT_DIR$/RecyclerView_HeaderAndFoot/RecyclerView_HeaderAndFoot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RecyclerView_Menu/RecyclerView_Menu.iml" filepath="$PROJECT_DIR$/RecyclerView_Menu/RecyclerView_Menu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RecyclerView_MultiModule/RecyclerView_MultiModule.iml" filepath="$PROJECT_DIR$/RecyclerView_MultiModule/RecyclerView_MultiModule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RecyclerView_SwipeRefreshView/RecyclerView_SwipeRefreshView.iml" filepath="$PROJECT_DIR$/RecyclerView_SwipeRefreshView/RecyclerView_SwipeRefreshView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView01/RecyclerView01.iml" filepath="$PROJECT_DIR$/RecyclerView01/RecyclerView01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView02_HeaderAndFoot/RecyclerView02_HeaderAndFoot.iml" filepath="$PROJECT_DIR$/RecyclerView02_HeaderAndFoot/RecyclerView02_HeaderAndFoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView03_SwipeRefreshView/RecyclerView03_SwipeRefreshView.iml" filepath="$PROJECT_DIR$/RecyclerView03_SwipeRefreshView/RecyclerView03_SwipeRefreshView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView04_CheckBox/RecyclerView04_CheckBox.iml" filepath="$PROJECT_DIR$/RecyclerView04_CheckBox/RecyclerView04_CheckBox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView05_Menu/RecyclerView05_Menu.iml" filepath="$PROJECT_DIR$/RecyclerView05_Menu/RecyclerView05_Menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView06_MultiModule/RecyclerView06_MultiModule.iml" filepath="$PROJECT_DIR$/RecyclerView06_MultiModule/RecyclerView06_MultiModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView07_CountDown/RecyclerView07_CountDown.iml" filepath="$PROJECT_DIR$/RecyclerView07_CountDown/RecyclerView07_CountDown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView_AllAdapter/RecyclerView_AllAdapter.iml" filepath="$PROJECT_DIR$/RecyclerView_AllAdapter/RecyclerView_AllAdapter.iml" />
     </modules>
   </component>
 </project>

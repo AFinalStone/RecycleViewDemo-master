@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_context"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:text="文本描述" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="当前时间" />
+
+
+</LinearLayout>

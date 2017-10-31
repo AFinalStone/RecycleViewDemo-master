@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView_context"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="文本描述" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
