@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0; i<20; i++){
             listData.add(new MyBean("+++"+i+"+"+i+"+++",""));
         }
-        adapter = new GeneralAdapter_CountDown(this, 0,mRecyclerView,listData);
+        adapter = new GeneralAdapter_CountDown(this, TimeUtil.getCurrentTimeInLong(),listData);
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
         mRecyclerView.setAdapter(adapter);
     }

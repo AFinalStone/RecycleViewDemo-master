@@ -2,12 +2,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher_round" />
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/textView_context"
@@ -15,15 +17,7 @@
         android:layout_height="50dp"
         android:background="@color/colorAccent"
         android:gravity="center"
-        android:text="文本描述" />
-
-    <TextView
-        android:id="@+id/textView_time"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="当前时间" />
+        android:text="文本内容" />
 
 
 </LinearLayout>

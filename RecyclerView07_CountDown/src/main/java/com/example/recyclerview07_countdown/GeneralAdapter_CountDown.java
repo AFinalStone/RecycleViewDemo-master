@@ -27,36 +27,12 @@ public class GeneralAdapter_CountDown extends RecyclerView.Adapter<GeneralAdapte
     private List<MyBean> mDatas;
     private LayoutInflater mInflater;
     private MyHandler myHandler;
-    private int firstVisiblePosition = 0;
-    private int lastVisiblePosition = 6;
     private long time_current;
 
-    public GeneralAdapter_CountDown(Context context, long timeCurrent, RecyclerView recyclerView, final List<MyBean> mDatas) {
+    public GeneralAdapter_CountDown(Context context, long timeCurrent, final List<MyBean> mDatas) {
         this.mDatas = mDatas;
         time_current = timeCurrent;
         mInflater = LayoutInflater.from(context);
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
-                super.onScrollStateChanged(recyclerView, newState);
-                RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
-                //判断是当前layoutManager是否为LinearLayoutManager
-                // 只有LinearLayoutManager才有查找第一个和最后一个可见view位置的方法
-                if (layoutManager instanceof LinearLayoutManager) {
-                    LinearLayoutManager linearManager = (LinearLayoutManager) layoutManager;
-                    //获取最后一个可见view的位置
-                    lastVisiblePosition = linearManager.findLastVisibleItemPosition();
-                    if(lastVisiblePosition < mDatas.size()-1){
-                        lastVisiblePosition += lastVisiblePosition;
-                    }
-                    //获取第一个可见view的位置
-                    firstVisiblePosition = linearManager.findFirstVisibleItemPosition();
-                    if(firstVisiblePosition >= 1){
-                        firstVisiblePosition -= firstVisiblePosition;
-                    }
-                }
-            }
-        });
         myHandler = new MyHandler(this);
         myHandler.sendEmptyMessage(myHandler.DATA_USER);
     }
@@ -70,9 +46,9 @@ public class GeneralAdapter_CountDown extends RecyclerView.Adapter<GeneralAdapte
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
-        final MyBean myBean =  mDatas.get(position);
+        MyBean myBean =  mDatas.get(position);
         holder.textView_context.setText(myBean.msg);
-        holder.textView_time.setText("当前时间："+time_current/1000);
+        holder.textView_time.setText("当前时间："+TimeUtil.getDateAndTime(time_current));
     }
 
     @Override
@@ -99,7 +75,7 @@ public class GeneralAdapter_CountDown extends RecyclerView.Adapter<GeneralAdapte
         private final WeakReference<GeneralAdapter_CountDown> mAdapter;
 
         public MyHandler(GeneralAdapter_CountDown sellActivity) {
-            mAdapter = new WeakReference<GeneralAdapter_CountDown>(sellActivity);
+            mAdapter = new WeakReference(sellActivity);
         }
 
         @Override
@@ -109,9 +85,7 @@ public class GeneralAdapter_CountDown extends RecyclerView.Adapter<GeneralAdapte
                 switch (msg.what) {
                     case DATA_USER:
                         adapter.time_current += 1000;
-                        for(int i=adapter.firstVisiblePosition; i<adapter.lastVisiblePosition; i++){
-                            adapter.notifyItemChanged(i);
-                        }
+                        adapter.notifyDataSetChanged();
                         sendEmptyMessageDelayed(DATA_USER,1000);
                         break;
                 }
