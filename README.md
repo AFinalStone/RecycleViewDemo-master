@@ -11,3 +11,5 @@
 ### [RecycleView控件的使用(六) 使用RecyclerView实现复杂布局](RecyclerView06_MultiModule)
 
 ### [RecycleView控件的使用(七) 使用RecyclerView实现条目倒计时的功能](RecyclerView07_CountDown)
+
+### [RecycleView控件的使用(八) 为RecyclerView创建普遍适用的适配器，使得RecyclerView使用更加方便](RecyclerView08_AllAdapter)
