@@ -10,7 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/RecyclerView05_Menu/RecyclerView05_Menu.iml" filepath="$PROJECT_DIR$/RecyclerView05_Menu/RecyclerView05_Menu.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecyclerView06_MultiModule/RecyclerView06_MultiModule.iml" filepath="$PROJECT_DIR$/RecyclerView06_MultiModule/RecyclerView06_MultiModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecyclerView07_CountDown/RecyclerView07_CountDown.iml" filepath="$PROJECT_DIR$/RecyclerView07_CountDown/RecyclerView07_CountDown.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RecyclerView_AllAdapter/RecyclerView_AllAdapter.iml" filepath="$PROJECT_DIR$/RecyclerView_AllAdapter/RecyclerView_AllAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView08_AllAdapter/RecyclerView08_AllAdapter.iml" filepath="$PROJECT_DIR$/RecyclerView08_AllAdapter/RecyclerView08_AllAdapter.iml" />
     </modules>
   </component>
 </project>

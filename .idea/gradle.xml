@@ -15,7 +15,7 @@
             <option value="$PROJECT_DIR$/RecyclerView05_Menu" />
             <option value="$PROJECT_DIR$/RecyclerView06_MultiModule" />
             <option value="$PROJECT_DIR$/RecyclerView07_CountDown" />
-            <option value="$PROJECT_DIR$/RecyclerView_AllAdapter" />
+            <option value="$PROJECT_DIR$/RecyclerView08_AllAdapter" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
